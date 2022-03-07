@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haromszog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <fieldset>
+        <input type="number" id="var_a" placeholder="a="><br>
+        <input type="number" id="var_b" placeholder="b="><br>
+        <p style="width: 175px; height: 20px; border: 1px solid black;" id="eredmeny">eredmény</p>
+        <img src="img/letöltés.png">
+        <button class="button" onclick="pita(var_a.value, var_b.value)">Done</button>
+    </fieldset>
+
+    <script>
+
+        function pita(a, b) {
+
+            c = Math.sqrt(a * a + b * b)
+            document.getElementById('eredmeny').innerHTML = c
+
+        }
+    </script>
+
+</body>
+
+</html>
